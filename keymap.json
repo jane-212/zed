@@ -8,7 +8,7 @@
   {
     "context": "Workspace",
     "bindings": {
-      "cmd-l": "workspace::ToggleRightDock"
+      "cmd-j": "workspace::ToggleRightDock"
     }
   },
   {
@@ -30,9 +30,6 @@
       "shift-u": "editor::Redo",
       "shift-j": "vim::ScrollDown",
       "shift-k": "vim::ScrollUp",
-      "cmd-j": "editor::AddSelectionBelow",
-      "cmd-k": "editor::AddSelectionAbove",
-      "cmd-l": "workspace::ToggleRightDock",
       "/": [
         "buffer_search::Deploy",
         {
