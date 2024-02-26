@@ -1,0 +1,74 @@
+[
+  {
+    "bindings": {
+      "shift-tab": "menu::SelectPrev",
+      "tab": "menu::SelectNext"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-j": "workspace::ToggleRightDock"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "cmd-i": "assistant::ToggleFocus"
+    }
+  },
+  {
+    "context": "AssistantPanel",
+    "bindings": {
+      "cmd-i": "terminal_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+    "bindings": {
+      "g r": "editor::Rename",
+      "g b": "workspace::ToggleZoom",
+      "g f": "editor::Format",
+      "g o": "pane::GoBack",
+      "g i": "pane::GoForward",
+      "g q": "editor::ToggleCodeActions",
+      "g n": "editor::GoToDiagnostic",
+      "g m": "markdown::OpenPreview",
+      "g p": "editor::GoToPrevDiagnostic",
+      "g v": "project_symbols::Toggle",
+      "g j": "file_finder::Toggle",
+      "g k": "editor::Fold",
+      "g l": "editor::UnfoldLines",
+      "u": "editor::Undo",
+      "shift-u": "editor::Redo",
+      "shift-j": "vim::ScrollDown",
+      "shift-k": "vim::ScrollUp",
+      "/": [
+        "buffer_search::Deploy",
+        {
+          "focus": true
+        }
+      ]
+    }
+  },
+  {
+    "context": "Editor && VimControl && !VimWaiting && !menu",
+    "bindings": {
+      "enter": "editor::SelectLargerSyntaxNode",
+      "backspace": "editor::SelectSmallerSyntaxNode",
+      "g c": [
+        "editor::ToggleComments",
+        {
+          "advance_downwards": false
+        }
+      ]
+    }
+  },
+  {
+    "context": "Editor && (showing_code_actions || showing_completions)",
+    "bindings": {
+      "shift-tab": "editor::ContextMenuPrev",
+      "tab": "editor::ContextMenuNext"
+    }
+  }
+]
