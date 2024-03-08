@@ -23,6 +23,7 @@
   "ensure_final_newline_on_save": false,
   "format_on_save": "off",
   "show_wrap_guides": false,
+  "soft_wrap": "none",
   "toolbar": {
     "breadcrumbs": false,
     "quick_actions": false
