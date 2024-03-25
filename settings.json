@@ -44,11 +44,7 @@
     "copilot": false
   },
   "terminal": {
-    "dock": "right",
-    "blinking": "on"
-  },
-  "inlay_hints": {
-    "enabled": true
+    "dock": "right"
   },
   "lsp": {
     "rust-analyzer": {
